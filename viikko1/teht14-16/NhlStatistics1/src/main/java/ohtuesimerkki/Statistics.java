@@ -40,9 +40,8 @@ public class Statistics {
         ArrayList<Player> topScorers = new ArrayList<Player>();
         Iterator<Player> playerIterator = players.iterator();
         
-        while (howMany>=0) {
+        for (int i = 0; i < howMany; i++) {
             topScorers.add( playerIterator.next() );            
-            howMany--;
         }
         
         return topScorers;
