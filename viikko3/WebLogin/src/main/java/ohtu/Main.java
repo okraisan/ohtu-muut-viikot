@@ -9,6 +9,7 @@ import ohtu.util.CreationStatus;
 import spark.ModelAndView;
 import static spark.Spark.*;
 import spark.template.velocity.VelocityTemplateEngine;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Main {
     

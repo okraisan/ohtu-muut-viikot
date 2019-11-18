@@ -6,14 +6,14 @@ import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import static org.junit.Assert.*;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class Stepdefs {
     //WebDriver driver = new ChromeDriver();
-    WebDriver driver = new HtmlUnitDriver();
+    WebDriver driver = new FirefoxDriver();
     String baseUrl = "http://localhost:4567";
     
     @Given("login is selected")
