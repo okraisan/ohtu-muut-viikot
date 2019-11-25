@@ -1,7 +1,7 @@
 package ohtu;
 
 public class TennisGame {
-    
+
     private int m_score1 = 0;
     private int m_score2 = 0;
     private String player1Name;
@@ -19,61 +19,42 @@ public class TennisGame {
             m_score2 += 1;
     }
 
+    public static String getNumericScoreName(int points) {
+        switch (points) {
+          case 0:
+            return "Love";
+          case 1:
+            return "Fifteen";
+          case 2:
+            return "Thirty";
+          case 3:
+            return "Forty";
+          default:
+            return "";
+        }
+    }
+
     public String getScore() {
         String score = "";
-        int tempScore=0;
-        if (m_score1==m_score2)
-        {
-            switch (m_score1)
-            {
-                case 0:
-                        score = "Love-All";
-                    break;
-                case 1:
-                        score = "Fifteen-All";
-                    break;
-                case 2:
-                        score = "Thirty-All";
-                    break;
-                case 3:
-                        score = "Forty-All";
-                    break;
-                default:
-                        score = "Deuce";
-                    break;
-                
-            }
-        }
-        else if (m_score1>=4 || m_score2>=4)
-        {
-            int minusResult = m_score1-m_score2;
-            if (minusResult==1) score ="Advantage player1";
-            else if (minusResult ==-1) score ="Advantage player2";
-            else if (minusResult>=2) score = "Win for player1";
-            else score ="Win for player2";
-        }
-        else
-        {
-            for (int i=1; i<3; i++)
-            {
-                if (i==1) tempScore = m_score1;
-                else { score+="-"; tempScore = m_score2;}
-                switch(tempScore)
-                {
-                    case 0:
-                        score+="Love";
-                        break;
-                    case 1:
-                        score+="Fifteen";
-                        break;
-                    case 2:
-                        score+="Thirty";
-                        break;
-                    case 3:
-                        score+="Forty";
-                        break;
-                }
-            }
+
+        if (m_score1 < 4 && m_score2 < 4) {
+            score = getNumericScoreName(m_score1) + "-";
+            if (m_score1 == m_score2)
+              score += "All";
+            else
+              score += getNumericScoreName(m_score2);
+
+        } else if (m_score1 == 4 && m_score2 == 4) {
+            score = "Deuce";
+
+        } else {
+            int playerAdvantage = m_score1 - m_score2;
+            String whichPlayerHasAdvantage = playerAdvantage > 0 ? "1" : "2";
+
+            if (Math.abs(playerAdvantage) == 1)
+              score = "Advantage player" + whichPlayerHasAdvantage;
+            else if (Math.abs(playerAdvantage) > 1)
+              score = "Win for player" + whichPlayerHasAdvantage;
         }
         return score;
     }
