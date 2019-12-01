@@ -1,0 +1,17 @@
+Retrospektiivi on agile- ja lean-metodologioihin kuuluva tiimin
+keskinäinen kokous, jossa tarkastellaan omaa tekemistä säännöllisin
+väliajoin. Tarkoituksena on kehittää tiimin toimintaa koetun pohjalta.
+
+Retrospektiivin kulku voi noudattaa monenlaisia tekniikoita. Eräs suosittu
+tapa on pyytää tiimiltä kommentteja kolmessa eri kategoriassa: mikä harmitti,
+mikä ilostutti, mikä suututti? Asioita kirjoitetaan lyhyesti PostIt-lapuille,
+jonka jälkeen lapuista poimitaan ryhmittelyn ja äänestyksen avulla muutama
+kaikkein keskeisintä ongelmaa, joiden ratkaisemisesta tiimi sitten keskustelee.
+Jokainen vaihe on erikseen aikarajoitettu, jottei tapaaminen venyisi.
+
+Toinen vähemmän strukturoitu tapa on käyttää viittä eri kategoriaa: mitä pitäisi
+aloittaa, minkä tekeminen lopettaa, mitä halutaan jatkaa, mitä pitäisi olla
+lisää ja mitä vähemmän. Jokaiseen kategoriaan pyydetään tiimiltä kommentteja,
+jotka kirjataan ylös ja niiden ratkaisuehdotuksista keskustellaan. Menetelmä
+soveltuu myös suurehkoille tiimeille, jolloin tiimi voidaan jakaa ryhmiin ja
+kommentteja pyytää työskentelyn eri osa-alueista.
