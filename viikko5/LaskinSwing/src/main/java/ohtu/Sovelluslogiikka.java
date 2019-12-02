@@ -1,4 +1,4 @@
-package laskin;
+package ohtu;
 
 public class Sovelluslogiikka {
  
